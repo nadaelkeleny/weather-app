@@ -5,13 +5,16 @@
     box-sizing: border-box;
 }
 body{
-    background: #222;
+    background: #7cc7d9;
 
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg , #00feba , #5b548a );
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255,255,0.4);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -27,7 +30,10 @@ body{
 .search input{
     border: 0;
     outline: 0;
-    background-color: #ebfffc;
+    background: rgba(255, 255 ,255,0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255,255,0.4);
     color: #555;
     padding: 10px 25px;
     height: 60px;
@@ -39,7 +45,10 @@ body{
 .search button{
     border: 0;
     outline: 0;
-    background-color: #ebfffc;
+    background: rgba(255, 255 ,255,0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255,255,0.4);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -90,4 +99,12 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+.weather {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.weather.change {
+  opacity: 0;
+  transform: translateX(-15px);
 }
